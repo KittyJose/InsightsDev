@@ -1,5 +1,5 @@
 const TerminusClient=require("./../node_modules/@terminusdb/terminusdb-client");
-const query=require("./query")
+const query=require("./query") 
 const {Octokit}=require('@octokit/rest')
 
 function DBConnect(opts, json){
