@@ -2,7 +2,7 @@ const TerminusClient=require("@terminusdb/terminusdb-client");
 const query=require("./query")
 const {Octokit}=require('@octokit/rest')
 
-/*function DBConnect(opts, json){
+function DBConnect(opts, json){
     const dbClient = new TerminusClient.WOQLClient(opts.server)
 
     try {
@@ -25,14 +25,8 @@ const {Octokit}=require('@octokit/rest')
     } catch (err) {
         console.log('err', err)
     }
-}*/
-
-function DBConnect(){
-    const octokit = new Octokit({ auth: "f0fcb84cd63dfa27cd00a5901183ab44dc5e7e9c " });
-    octokit.request('GET /repos/:owner/:repo/releases/latest', {
-      owner: "KittyJose",
-      repo: "myDev"
-    }).then(response => console.log(response.data))
 }
+
+
 
 module.exports = DBConnect
