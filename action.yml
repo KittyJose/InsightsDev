@@ -1,0 +1,12 @@
+name: 'Insights Dev'
+description: 'Insights for my project'
+inputs:
+  json:  # id of input
+    description: 'json Object'
+    required: true
+outputs:
+  time:
+    description: 'Success I think'
+runs:
+  using: 'node12'
+  main: 'index.js'

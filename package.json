@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/KittyJose/InsightsDev#readme",
   "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
     "@terminusdb/terminusdb-client": "file:../terminusdb-client",
     "axios": "^0.21.1"
   }
