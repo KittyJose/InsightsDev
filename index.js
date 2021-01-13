@@ -1,4 +1,4 @@
-//const DBConnect = require("./src/connect");
+const DBConnect = require("./src/connect");
 const core = require('@actions/core');
 const github = require('@actions/github');
 
