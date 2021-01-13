@@ -15,8 +15,11 @@ const github = require('@actions/github');
 try {
   // `who-to-greet` input defined in action metadata file
   const jsonInp = core.getInput('json');
-  console.log('reached insight repo')
   console.log(`recieved this from abother repo action ${jsonInp}!`);
+
+  let config = {server : "https://127.0.0.1:6363", key : "root", user: "admin", db:"Doc"}
+  DBConnect(config, jsonInp.event)
+
 } catch (error) {
   core.setFailed(error.message);
 }
